@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS File -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--=== BOX ICONS ==== -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ===== GOOGLE FONTS ===== -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <!-- ==== SWIPER CSS ==== -->
+    <link href="assets/css/swiper-bundle.min.css">
     <title>Personal Portfolio Website</title>
 </head>
 <body>
@@ -88,6 +92,7 @@
             </div>
         </section>
 
+        <!-- ====== QUALIFICATION =====-->
         <section class="qualification section bd-container">
             <span class="section-subtitle">Experience and education</span>
             <h2 class="section-title">Qualification</h2>
@@ -244,14 +249,14 @@
             <span class="section-subtitle">My recent works</span>
             <h2 class="section-title">Portfolio</h2>
             <div class="portfolio__nav">
-                <span class="portfolio__item">All</span>
-                <span class="portfolio__item">Web</span>
-                <span class="portfolio__item">Ui/Ux</span>
-                <span class="portfolio__item">App</span>
+                <span class="portfolio__item active-portfolio" data-filter="all">All</span>
+                <span class="portfolio__item" data-filter=".web">Web</span>
+                <span class="portfolio__item" data-filter=".ux">Ui/Ux</span>
+                <span class="portfolio__item" data-filter=".app">App</span>
             </div>
 
-            <div class="porfolio__container bd-grid">
-                <div class="portfolio__content">
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__content mix web">
                     <a href="#"><img src="assets/img/work1.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Web Development</span>
@@ -260,7 +265,7 @@
                     </div>
                 </div>
                 
-                <div class="portfolio__content">
+                <div class="portfolio__content mix web">
                     <a href="#"><img src="assets/img/work2.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Web Development</span>
@@ -269,7 +274,7 @@
                     </div>
                 </div>
                 
-                <div class="portfolio__content">
+                <div class="portfolio__content mix ux">
                     <a href="#"><img src="assets/img/work3.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Ux Design</span>
@@ -278,7 +283,7 @@
                     </div>
                 </div>
                 
-                <div class="portfolio__content">
+                <div class="portfolio__content mix ux">
                     <a href="#"><img src="assets/img/work4.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Ux Design</span>
@@ -287,7 +292,7 @@
                     </div>
                 </div>
                 
-                <div class="portfolio__content">
+                <div class="portfolio__content mix app">
                     <a href="#"><img src="assets/img/work5.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Mobile App</span>
@@ -296,7 +301,7 @@
                     </div>
                 </div>
                 
-                <div class="portfolio__content">
+                <div class="portfolio__content mix app">
                     <a href="#"><img src="assets/img/work6.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Mobile App</span>
@@ -304,6 +309,91 @@
                         <a href="#" class="button button-link">View Details</a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- ==== TESTIMONIAL ==== -->
+        <!--<section class="testimonial section bd-container">
+            <span class="section-subtitle">My client saying</span>
+            <h2 class="section-title">Testimonial</h2>
+
+            <div class="testimonial__container swiper-container">
+                <div class="swiper-wrapper"> 
+                    <div class="testimonial__content swiper-slide">
+                        <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+                        <h3 class="testimonial__title">Nik Holly</h3>
+                        <span class="testimonial__client">Client</span>
+                        <p class="testimonial__description">This company does a very good service,offers the best deals and does a good job,I recommend it.</p>
+                    </div>
+                
+                    <div class="testimonial__content swiper-slide">
+                            <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+                            <h3 class="testimonial__title">Sara Mill</h3>
+                            <span class="testimonial__client">Client</span>
+                            <p class="testimonial__description">This company does a very good service,offers the best deals and does a good job,I recommend it.</p>
+                    </div>
+                
+                    <div class="testimonial__content swiper-slide">
+                            <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">
+                            <h3 class="testimonial__title">Clay Mitchell</h3>
+                            <span class="testimonial__client">Client</span>
+                            <p class="testimonial__description">This company does a very good service,offers the best deals and does a good job,I recommend it.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- ==== CONTACT ME ==== -->
+        <section class="contact section bd-container" id="contact">
+            <span class="section-subtitle">For projects</span>
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="contact__content bd-grid">
+                    <div class="contact__box">
+                        <i class='bx bx-home contact__icon'></i>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__description">#123 Lima-Peru</span>
+                    </div>
+                    
+                    <div class="contact__box">
+                        <i class='bx bx-phone contact__icon'></i>
+                        <h3 class="contact__title">Phone</h3>
+                        <span class="contact__description">7378723929</span>
+                    </div>
+                    
+                    <div class="contact__box">
+                        <i class='bx bx-envelope contact__icon'></i>
+                        <h3 class="contact__title">Gmail</h3>
+                        <span class="contact__description">sasupriya1999@gmail.com</span>
+                    </div>
+                    
+                    <div class="contact__box">
+                        <i class='bx bx-chat contact__icon'></i>
+                        <h3 class="contact__title">Chat</h3>
+                        <div>
+                            <a href="#" class="contact__social"><i class='bx bxl-whatsapp-square'></i></a>
+                            <a href="#" class="contact__social"><i class='bx bxl-telegram'></i></a>
+                            <a href="#" class="contact__social"><i class='bx bxl-messenger'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="email" placeholder="Email" class="contact__input">
+                    </div>
+                    
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Project" class="contact__input">
+                        <input type="number" placeholder="Number" class="contact__input">
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="7" placeholder="Mesage" class="contact__input"></textarea>
+                    
+                    <input type="submit" value ="Send message" class="button contact__button">
+                </form>
             </div>
         </section>
 
@@ -324,9 +414,11 @@
 
 
 
-
-
-
+    <!-- ===== SWIPER JS ===== -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    
+    <!-- ====== MIXITUP FILTER==== -->
+    <script src="assets/js/mixitup.min.js"></script>
     <!-- Main.js-->
     <script src="assets/js/main.js"></script>
 </body>
